@@ -1,7 +1,29 @@
 {
-  "name": "ignite-design-system",
+  "name": "leandroppf-ignite-ds",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1-alpha",
+  "license": "MIT",
+  "description": "A library to start learning about this whole universe of libraries!!!",
+  "homepage": "https://leandroppf.github.io/ignite-lab-design-system/",
+  "author": {
+    "name": "Leandro Pedroso",
+    "email": "leandroppf@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/leandroppf/ignite-lab-design-system/issues"
+  },
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/leandroppf/ignite-lab-design-system"
+  },
+  "keywords": [
+    "vite",
+    "tailwind",
+    "components",
+    "components",
+    "design system",
+    "storybook"
+  ],
   "type": "module",
   "scripts": {
     "dev": "vite",
