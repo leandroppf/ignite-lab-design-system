@@ -1,6 +1,6 @@
 {
   "name": "leandroppf-ignite-ds",
-  "private": true,
+  "private": false,
   "version": "0.0.1-alpha",
   "license": "MIT",
   "description": "A library to start learning about this whole universe of libraries!!!",
