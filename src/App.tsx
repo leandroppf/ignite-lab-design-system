@@ -2,7 +2,7 @@ import { Logo } from "./Logo";
 import { Envelope, Lock } from "phosphor-react";
 import "./styles/global.css";
 
-import { Button, Checkbox, TextInput, Text, Heading } from "./components";
+import { Button, Checkbox, TextInput, Text, Heading } from "./lib";
 
 export function App() {
   return (

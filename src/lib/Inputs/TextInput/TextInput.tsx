@@ -44,7 +44,7 @@ function TextInputInput(props: TextInputInputProps) {
 
 TextInputInput.displayName = "TextInput.Input";
 
-export const TextInput = {
+export default {
   Root: TextInputRoot,
   Input: TextInputInput,
   Icon: TextInputIcon,

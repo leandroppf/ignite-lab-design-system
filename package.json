@@ -1,7 +1,7 @@
 {
-  "name": "leandroppf-ignite-ds",
+  "name": "leandroppf-ignite-components",
   "private": false,
-  "version": "0.0.1-alpha",
+  "version": "0.0.10-alpha",
   "license": "MIT",
   "description": "A library to start learning about this whole universe of libraries!!!",
   "homepage": "https://leandroppf.github.io/ignite-lab-design-system/",
@@ -25,13 +25,27 @@
     "storybook"
   ],
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/leandroppf-ignite-components.umd.js",
+  "module": "./dist/leandroppf-ignite-components.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/leandroppf-ignite-components.es.js",
+      "require": "./dist/leandroppf-ignite-components.umd.js"
+    },
+    "./dist/leandroppf.css": "./dist/leandroppf.css"
+  },
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build && npm run build-tailwind",
     "preview": "vite preview",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "deploy-storybook": "storybook-to-ghpages"
+    "deploy-storybook": "storybook-to-ghpages",
+    "build-tailwind": "NODE_ENV=production npx tailwindcss -o ./dist/leandroppf.css --minify"
   },
   "dependencies": {
     "@radix-ui/react-checkbox": "^1.0.0",
@@ -40,7 +54,8 @@
     "clsx": "^1.2.1",
     "phosphor-react": "^1.4.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "vite-plugin-dts": "^1.6.6"
   },
   "devDependencies": {
     "@babel/core": "^7.19.3",
